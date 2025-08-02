@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firehouse - Planejamento de Eventos Personalizados</title>
+    <!-- Adiciona o Tailwind CSS para estilo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inclui a fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Adiciona o link para o seu arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos personalizados para os botões */
+        .btn-primary {
+            @apply bg-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out;
+            @apply hover:bg-red-700 hover:shadow-xl transform hover:-translate-y-1;
+        }
+        .btn-secondary {
+            @apply bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-full shadow-md transition-all duration-300 ease-in-out;
+            @apply hover:bg-gray-300 transform hover:-translate-y-1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    
+    <!-- Barra de Navegação -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-red-600">Firehouse</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Início</a>
+                <a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Sobre Nós</a>
+                <a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Serviços</a>
+                <a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Eventos</a>
+                <a href="#" class="text-gray-600 hover:text-red-600 transition-colors">Contato</a>
+                <a href="#planejar" class="btn-primary">Planejar Meu Evento</a>
+            </div>
+            <!-- Botão de menu para mobile -->
+            <button class="md:hidden text-gray-600 text-2xl">
+                <!-- Ícone de menu (exemplo com SVG inline) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <main>
+        <section class="bg-gray-100 py-20 md:py-32 text-center" style="background-image: url('https://placehold.co/1920x1080/fef2f2/ef4444?text=O+seu+evento+começa+aqui'); background-size: cover; background-position: center;">
+            <div class="container mx-auto px-6">
+             
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos" class="container mx-auto px-6 py-16 md:py-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">O que podemos criar para você?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Cartão de Serviço: Buffet -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Buffet" alt="Ícone de Buffet" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold mb-2">Buffet</h3>
+                    <p class="text-gray-600 mb-4">Opções gastronômicas que encantam seus convidados. Do clássico ao exótico.</p>
+                    <a href="#" class="btn-secondary">Saber Mais</a>
+                </div>
+                <!-- Cartão de Serviço: Decoração -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Decoração" alt="Ícone de Decoração" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold mb-2">Decoração</h3>
+                    <p class="text-gray-600 mb-4">Transforme seu espaço com temas e cores que refletem a sua história.</p>
+                    <a href="#" class="btn-secondary">Saber Mais</a>
+                </div>
+                <!-- Cartão de Serviço: Animador -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Animador" alt="Ícone de Animador" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold mb-2">Animador</h3>
+                    <p class="text-gray-600 mb-4">Entretenimento garantido para todas as idades, com diversão e interação.</p>
+                    <a href="#" class="btn-secondary">Saber Mais</a>
+                </div>
+                <!-- Cartão de Serviço: DJ -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=DJ" alt="Ícone de DJ" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold mb-2">DJ</h3>
+                    <p class="text-gray-600 mb-4">Música para todos os gostos. Crie a trilha sonora perfeita para a sua festa.</p>
+                    <a href="#" class="btn-secondary">Saber Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Chamada para Ação (CTA) -->
+        <section id="planejar" class="bg-red-600 text-white py-16 md:py-24 text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Pronto para começar?</h2>
+                <p class="text-lg md:text-xl mb-8">Nossa equipe está pronta para te ajudar a transformar sua ideia em realidade.
+                <br>Crie um evento inesquecível, do jeito que você sempre sonhou.</p>
+                <a href="#" class="btn-secondary bg-white text-red-600 hover:bg-gray-100">Começar Agora</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Firehouse. Todos os direitos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-white transition-colors">Termos de Serviço</a>
+                <a href="#" class="hover:text-white transition-colors">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
