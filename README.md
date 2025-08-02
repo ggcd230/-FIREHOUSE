@@ -8,3 +8,10 @@
 ⦁	PEDRO DO NASCIMENTO SCARABELLI - 12300187
 
  - Turma: 3D2
+
+[x] Página inicial
+[ ] Página de login
+[ ] Página de cadastro de usuários
+[ ] Página de listagem de serviços (buffet, DJ, etc.)
+[ ] Página de agendamento de evento
+[ ] Página de perfil do usuário
